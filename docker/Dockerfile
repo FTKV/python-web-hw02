@@ -3,7 +3,7 @@
 FROM python:3.11
 
 # Встановимо змінну середовища
-ENV APP_HOME /app
+ENV APP_HOME /app/bot_assistant
 
 # Встановимо робочу директорію всередині контейнера
 WORKDIR $APP_HOME
