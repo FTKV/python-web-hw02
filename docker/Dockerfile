@@ -12,9 +12,9 @@ WORKDIR $APP_HOME
 COPY . .
 
 RUN pip install .
-RUN useradd -ms /bin/bash user
-USER user
-WORKDIR /home/user  
+# RUN useradd -ms /bin/bash user
+# USER user
+# WORKDIR /home/user
 
 # Запустимо наш застосунок всередині контейнера
 ENTRYPOINT ["bot-assistant"]
